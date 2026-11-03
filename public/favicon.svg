@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#164D32" />
+  <!-- Minimal Cow Head & Leaves -->
+  <path d="M22 18 C18 16 14 18 13 22 C12 26 15 29 19 28 C21 27.5 22 25 22 23 Z" fill="#27864B" />
+  <path d="M42 18 C46 16 50 18 51 22 C52 26 49 29 45 28 C43 27.5 42 25 42 23 Z" fill="#27864B" />
+  <!-- Cow Head Silhouette -->
+  <path d="M24 22 C24 20 27 18 32 18 C37 18 40 20 40 22 C41 26 43 30 43 36 C43 43 38 48 32 48 C26 48 21 43 21 36 C21 30 23 26 24 22 Z" fill="#FFFFFF" />
+  <!-- Cow Muzzle & Spots -->
+  <ellipse cx="32" cy="42" rx="7" ry="5" fill="#FFF9F1" />
+  <circle cx="29" cy="42" r="1.2" fill="#26332C" />
+  <circle cx="35" cy="42" r="1.2" fill="#26332C" />
+  <circle cx="28" cy="30" r="1.8" fill="#26332C" />
+  <circle cx="36" cy="30" r="1.8" fill="#26332C" />
+  <!-- Watermelon Accent Leaf / Heart -->
+  <path d="M32 12 C30 15 30 18 32 20 C34 18 34 15 32 12 Z" fill="#F04458" />
+  <path d="M28 14 C25 15 25 18 28 19 C29 17 29 15 28 14 Z" fill="#27864B" />
+  <path d="M36 14 C39 15 39 18 36 19 C35 17 35 15 36 14 Z" fill="#27864B" />
+</svg>
