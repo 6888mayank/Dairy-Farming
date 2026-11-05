@@ -109,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
               {/* Supporting Description */}
               <p className="text-base sm:text-lg text-[#26332C]/85 leading-relaxed max-w-2xl font-normal">
-                Building a modern dairy farming ecosystem on 5.5 acres of fertile agricultural land, with a vision to deliver quality milk through responsible animal care, modern infrastructure, and sustainable farming practices.
+                Building a modern dairy farming ecosystem rooted in animal welfare, scientific herd nutrition, and sustainable agriculture — bringing wholesome, farm-fresh milk from our pastures to your family.
               </p>
 
               {/* CTA Buttons */}
@@ -135,7 +135,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Planned Notice tag */}
               <div className="pt-2 flex items-center gap-2 text-xs text-[#556B60]">
                 <ShieldCheck className="w-4 h-4 text-[#27864B] shrink-0" />
-                <span>Planned Modern Dairy Project • Initial Planned Herd: 20 HF & Jersey Livestock</span>
+                <span>Modern Dairy Farming Ecosystem • Purebred HF & Jersey Livestock</span>
               </div>
             </div>
 
@@ -180,11 +180,11 @@ export const HomePage: React.FC<HomePageProps> = ({
                 {/* Floating mini stats badge overlapping right edge */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-6 bg-white rounded-2xl p-3.5 shadow-xl border border-[#27864B]/20 flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-[#EAF5EE] text-[#27864B] flex items-center justify-center font-bold">
-                    <Tractor className="w-5 h-5" />
+                    <MapPin className="w-5 h-5" />
                   </div>
                   <div className="text-left">
-                    <div className="text-sm font-extrabold text-[#164D32]">5.5 Acres</div>
-                    <div className="text-[10px] uppercase font-bold text-[#27864B] tracking-wider">Fertile Land</div>
+                    <div className="text-sm font-extrabold text-[#164D32]">Megalahundi</div>
+                    <div className="text-[10px] uppercase font-bold text-[#27864B] tracking-wider">Chamarajanagara</div>
                   </div>
                 </div>
               </div>
@@ -264,11 +264,11 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <Sparkles className="w-4 h-4 text-[#F04458]" /> Where Nature Meets Modern Dairy Farming
               </span>
               <span className="text-[#34A853]">✦</span>
-              <span className="text-white/95">🌱 5.5 Acres Fertile Agricultural Land</span>
+              <span className="text-white/95">🌱 Sustainable Agricultural Pastures</span>
               <span className="text-[#34A853]">✦</span>
-              <span className="text-[#FF7185]">🐄 20 Planned HF & Jersey Cattle</span>
+              <span className="text-[#FF7185]">🐄 Purebred HF & Jersey Herd</span>
               <span className="text-[#34A853]">✦</span>
-              <span className="text-white/95">🥛 Touchless Milking & Rapid 4°C Bulk Cooling</span>
+              <span className="text-white/95">🥛 Fresh Milk & Organic Buttermilk (200 ml)</span>
               <span className="text-[#34A853]">✦</span>
               <a href="tel:+918088050628" className="text-[#34A853] hover:underline flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5" /> +91 80880 50628
@@ -288,11 +288,11 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <Sparkles className="w-4 h-4 text-[#F04458]" /> Where Nature Meets Modern Dairy Farming
               </span>
               <span className="text-[#34A853]">✦</span>
-              <span className="text-white/95">🌱 5.5 Acres Fertile Agricultural Land</span>
+              <span className="text-white/95">🌱 Sustainable Agricultural Pastures</span>
               <span className="text-[#34A853]">✦</span>
-              <span className="text-[#FF7185]">🐄 20 Planned HF & Jersey Cattle</span>
+              <span className="text-[#FF7185]">🐄 Purebred HF & Jersey Herd</span>
               <span className="text-[#34A853]">✦</span>
-              <span className="text-white/95">🥛 Touchless Milking & Rapid 4°C Bulk Cooling</span>
+              <span className="text-white/95">🥛 Fresh Milk & Organic Buttermilk (200 ml)</span>
               <span className="text-[#34A853]">✦</span>
               <a href="tel:+918088050628" className="text-[#34A853] hover:underline flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5" /> +91 80880 50628
@@ -376,7 +376,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </h2>
 
               <p className="text-base sm:text-lg text-[#26332C]/85 leading-relaxed">
-                Vasundhara Diary and Farms is an upcoming modern dairy farming venture focused on developing a well-organized dairy production unit with 5.5 acres of fertile agricultural land.
+                Vasundhara Diary and Farms is an upcoming modern dairy farming venture located in Megalahundi, Chamarajanagara, focused on developing an exemplary sustainable dairy ecosystem.
               </p>
 
               <p className="text-sm sm:text-base text-[#556B60] leading-relaxed">
@@ -387,18 +387,18 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="bg-white p-4 rounded-2xl border border-[#164D32]/10 shadow-xs">
                   <div className="text-xs font-bold uppercase tracking-wider text-[#F04458]">
-                    Planned Livestock
+                    Livestock Welfare
                   </div>
                   <div className="text-sm font-bold text-[#164D32] mt-1">
-                    20 HF & Jersey Cattle
+                    Purebred HF & Jersey
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-2xl border border-[#164D32]/10 shadow-xs">
                   <div className="text-xs font-bold uppercase tracking-wider text-[#27864B]">
-                    Land Scale
+                    Land Foundation
                   </div>
                   <div className="text-sm font-bold text-[#164D32] mt-1">
-                    5.5 Fertile Acres
+                    Fertile Pastures
                   </div>
                 </div>
               </div>
@@ -548,7 +548,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           {/* 6 Feature Columns Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             
-            {/* Feature 1: 5.5 Acres */}
+            {/* Feature 1: Fertile Land */}
             <div className="bg-[#0E3522] rounded-3xl p-6 sm:p-7 border border-white/10 hover:border-[#34A853]/40 transition-all duration-300 text-left group">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#27864B]/30 border border-[#27864B] text-[#34A853] flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -557,7 +557,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <span className="font-mono text-xs font-bold text-white/40">01</span>
               </div>
               <div className="text-xl sm:text-2xl font-display font-extrabold text-white">
-                5.5 Acres
+                Rich Soil
               </div>
               <div className="text-xs font-bold uppercase tracking-wider text-[#FF7185] mt-0.5">
                 Fertile Agricultural Land
@@ -567,7 +567,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </p>
             </div>
 
-            {/* Feature 2: 20-Cattle */}
+            {/* Feature 2: High Welfare */}
             <div className="bg-[#0E3522] rounded-3xl p-6 sm:p-7 border border-white/10 hover:border-[#34A853]/40 transition-all duration-300 text-left group">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#27864B]/30 border border-[#27864B] text-[#34A853] flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -576,7 +576,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <span className="font-mono text-xs font-bold text-white/40">02</span>
               </div>
               <div className="text-xl sm:text-2xl font-display font-extrabold text-white">
-                20-Cattle
+                High Welfare
               </div>
               <div className="text-xs font-bold uppercase tracking-wider text-[#FF7185] mt-0.5">
                 Planned Dairy Unit
@@ -772,7 +772,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </blockquote>
                 <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-xs text-[#556B60]">
                   <CheckCircle2 className="w-4 h-4 text-[#27864B]" />
-                  <span>5.5 Acres Agricultural Foundation</span>
+                  <span>Fertile Agricultural & Soil Foundation</span>
                 </div>
               </div>
             </div>
@@ -795,7 +795,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </blockquote>
                 <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-xs text-[#556B60]">
                   <CheckCircle2 className="w-4 h-4 text-[#F04458]" />
-                  <span>Initial 20 HF & Jersey Livestock Focus</span>
+                  <span>Purebred Livestock & Animal Welfare Focus</span>
                 </div>
               </div>
             </div>

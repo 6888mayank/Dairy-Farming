@@ -3,17 +3,17 @@ import { PageId } from '../types';
 import { ROADMAP_PHASES } from '../data/content';
 import { CurvedDivider } from '../components/CurvedDivider';
 import { LeafDecoration } from '../components/LeafDecoration';
-import { 
-  HeartHandshake, 
-  Sprout, 
-  Cpu, 
-  CheckCircle2, 
-  ArrowRight, 
-  Calendar, 
-  Droplet, 
-  Sun, 
-  ShieldCheck, 
-  Layers 
+import {
+  HeartHandshake,
+  Sprout,
+  Cpu,
+  CheckCircle2,
+  ArrowRight,
+  Calendar,
+  Droplet,
+  Sun,
+  ShieldCheck,
+  Layers
 } from 'lucide-react';
 
 interface SustainabilityPageProps {
@@ -24,7 +24,7 @@ interface SustainabilityPageProps {
 export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNavigate, onOpenEnquiry }) => {
   return (
     <div className="w-full overflow-hidden">
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 sm:pt-40 pb-20 bg-gradient-to-b from-white via-[#FFF9F1] to-[#FFF9F1] overflow-hidden text-left">
         <div className="absolute top-20 right-8 pointer-events-none opacity-30">
@@ -48,7 +48,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
             </h1>
 
             <p className="text-base sm:text-lg text-[#556B60] leading-relaxed">
-              True dairy quality begins with the respect we accord to our animals and the soil that feeds them. Discover our sustainable model across 5.5 fertile acres.
+              True dairy quality begins with the respect we accord to our animals and the soil that feeds them. Discover our sustainable model, closed-loop soil enrichment, and animal welfare practices.
             </p>
           </div>
         </div>
@@ -61,11 +61,11 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
       {/* 3 Pillars Section */}
       <section className="py-16 sm:py-24 bg-[#FFF9F1]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left space-y-20">
-          
+
           {/* Pillar 1: Responsible Animal Care */}
           <div className="bg-white rounded-3xl sm:rounded-[2.5rem] p-8 sm:p-12 shadow-lg border border-[#164D32]/10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               <div className="lg:col-span-5 relative">
                 <div className="rounded-3xl overflow-hidden aspect-4/3 shadow-md border-2 border-gray-100">
                   <img
@@ -137,7 +137,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
           {/* Pillar 2: Sustainable Agriculture */}
           <div className="bg-white rounded-3xl sm:rounded-[2.5rem] p-8 sm:p-12 shadow-lg border border-[#164D32]/10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               <div className="lg:col-span-7 space-y-4 order-2 lg:order-1">
                 <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#27864B]">
                   <Sprout className="w-4 h-4" /> Earth Stewardship
@@ -148,7 +148,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
                 </h3>
 
                 <p className="text-sm sm:text-base text-[#26332C]/85 leading-relaxed">
-                  A modern dairy farm must operate in synergy with its surrounding land. Our 5.5-acre agricultural model focuses on biological enrichment and resource conservation.
+                  A modern dairy farm must operate in synergy with its surrounding land. Our agricultural model focuses on biological enrichment, organic fodder, and resource conservation.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-[#556B60]">
@@ -156,7 +156,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
                     <CheckCircle2 className="w-4 h-4 text-[#27864B] shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-[#164D32] block">Responsible Land Use</strong>
-                      Careful soil zoning preventing nutrient depletion and erosion across 5.5 acres.
+                      Careful soil zoning preventing nutrient depletion and erosion across farm pastures.
                     </div>
                   </div>
 
@@ -209,7 +209,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
           {/* Pillar 3: Modern Dairy Management */}
           <div className="bg-white rounded-3xl sm:rounded-[2.5rem] p-8 sm:p-12 shadow-lg border border-[#164D32]/10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               <div className="lg:col-span-5 relative">
                 <div className="rounded-3xl overflow-hidden aspect-4/3 shadow-md border-2 border-gray-100">
                   <img
@@ -284,7 +284,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
       {/* SECTION 4: Future Roadmap (Phases 1-4) */}
       <section className="py-20 sm:py-28 bg-[#164D32] text-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF7185] bg-white/10 px-4 py-1.5 rounded-full inline-block border border-white/10">
               STRATEGIC EXECUTION

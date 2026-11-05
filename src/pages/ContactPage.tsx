@@ -11,12 +11,11 @@ import {
   Send, 
   CheckCircle2, 
   ShieldCheck, 
-  Sparkles, 
   Copy, 
   Check, 
   ExternalLink,
   Tractor,
-  Layers
+  Clock
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -162,18 +161,18 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#FF7185] bg-white/10 px-3 py-1 rounded-full inline-block backdrop-blur-xs mb-2">
-                    PLANNED VENTURE SPECIFICATIONS
+                    REGISTERED OFFICE & FARM
                   </span>
                   <h3 className="text-xl font-bold font-display text-white">
-                    {BRAND.name} {BRAND.subname}
+                    {BRAND.registeredOfficeName}
                   </h3>
                   <div className="flex items-center gap-3 mt-1.5 text-xs text-white/85">
                     <span className="flex items-center gap-1 font-semibold text-[#34A853]">
-                      <Tractor className="w-3.5 h-3.5" /> 5.5 Fertile Acres
+                      <MapPin className="w-3.5 h-3.5" /> Megalahundi, Chamarajanagara
                     </span>
                     <span>•</span>
                     <span className="flex items-center gap-1 font-semibold text-[#FF7185]">
-                      <ShieldCheck className="w-3.5 h-3.5" /> 20 Planned HF & Jersey
+                      <ShieldCheck className="w-3.5 h-3.5" /> Modern Dairy Ecosystem
                     </span>
                   </div>
                 </div>
@@ -183,18 +182,21 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
               <div className="bg-white rounded-3xl p-6 sm:p-7 shadow-md border border-[#164D32]/10 space-y-5">
                 
                 <h4 className="text-sm font-bold uppercase tracking-wider text-[#164D32] border-b border-gray-100 pb-3">
-                  Direct Communication Channels
+                  Registered Office & Direct Communication Channels
                 </h4>
 
-                {/* Farm Address */}
+                {/* Registered Office Address */}
                 <div className="flex items-start gap-3.5">
                   <div className="w-10 h-10 rounded-xl bg-[#EAF5EE] text-[#27864B] flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#556B60] block">
-                      Farm Location
+                      Registered Office
                     </span>
+                    <p className="text-xs sm:text-sm text-[#26332C] font-semibold mt-0.5">
+                      {BRAND.registeredOfficeName}
+                    </p>
                     <p className="text-xs sm:text-sm text-[#26332C] font-medium leading-relaxed mt-0.5">
                       {BRAND.address}
                     </p>
@@ -202,14 +204,30 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
                       onClick={() => setShowMapModal(true)}
                       className="inline-flex items-center gap-1 text-xs font-bold text-[#27864B] hover:text-[#164D32] mt-1.5 cursor-pointer"
                     >
-                      <span>View Farm Map & Coordinates</span>
+                      <span>View Map & Coordinates</span>
                       <ExternalLink className="w-3 h-3" />
                     </button>
                   </div>
                 </div>
 
+                {/* Office Hours */}
+                <div className="flex items-start gap-3.5 pt-3 border-t border-gray-100">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFF4E5] text-[#D97706] flex items-center justify-center shrink-0">
+                    <Clock className="w-5 h-5 text-[#D97706]" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#556B60] block">
+                      Office Hours
+                    </span>
+                    <div className="text-xs text-[#26332C] font-medium space-y-0.5 mt-0.5">
+                      <p><span className="font-semibold text-[#164D32]">Monday to Friday:</span> 7:00 am to 4:00 pm</p>
+                      <p><span className="font-semibold text-[#164D32]">Saturday & Sunday:</span> 7:00 am to 12:00 pm</p>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Contact Phone */}
-                <div className="flex items-start gap-3.5">
+                <div className="flex items-start gap-3.5 pt-3 border-t border-gray-100">
                   <div className="w-10 h-10 rounded-xl bg-[#FFE4E8] text-[#F04458] flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
@@ -223,12 +241,12 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
                     >
                       {BRAND.phone}
                     </a>
-                    <span className="text-[11px] text-[#556B60]">Mon - Sat: 9:00 AM - 6:00 PM IST</span>
+                    <span className="text-[11px] text-[#556B60]">Official assistance during office hours</span>
                   </div>
                 </div>
 
                 {/* Email Address */}
-                <div className="flex items-start gap-3.5">
+                <div className="flex items-start gap-3.5 pt-3 border-t border-gray-100">
                   <div className="w-10 h-10 rounded-xl bg-[#EAF5EE] text-[#27864B] flex items-center justify-center shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
@@ -242,12 +260,12 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
                     >
                       {BRAND.email}
                     </a>
-                    <span className="text-[11px] text-[#556B60]">Responses typically within 24 hours</span>
+                    <span className="text-[11px] text-[#556B60]">Official inquiries: {BRAND.email}</span>
                   </div>
                 </div>
 
                 {/* WhatsApp Channel */}
-                <div className="flex items-start gap-3.5 pt-2 border-t border-gray-100">
+                <div className="flex items-start gap-3.5 pt-3 border-t border-gray-100">
                   <div className="w-10 h-10 rounded-xl bg-[#25D366]/20 text-[#25D366] flex items-center justify-center shrink-0">
                     <MessageSquare className="w-5 h-5 text-[#25D366]" />
                   </div>
@@ -524,7 +542,7 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
                     <h5 className="font-bold text-[#164D32] text-sm mt-1">Vasundhara Diary and Farms</h5>
                     <p className="text-xs text-[#556B60] mt-0.5">{BRAND.address}</p>
                     <span className="text-[10px] font-bold text-[#27864B] bg-[#EAF5EE] px-2.5 py-0.5 rounded-full inline-block mt-2">
-                      5.5 Acres Survey Perimeter
+                      Survey No. 159, Megalahundi
                     </span>
                   </div>
                 </div>

@@ -1,8 +1,9 @@
-import { ProductItem, CattleBreed, FarmInfrastructure, GalleryItem, RoadmapPhase } from '../types';
+import { ProductItem, CattleBreed, FarmInfrastructure, GalleryItem, RoadmapPhase, BreedingGeneticsInfo } from '../types';
 
 export const BRAND = {
   name: "VASUNDHARA",
   subname: "DIARY AND FARMS",
+  registeredOfficeName: "Vasundhara Farms and Dairy",
   tagline: "Rooted In Nature. Growing With Purpose.",
   finalMessage: "Nature's Land. Modern Dairy. A Better Tomorrow.",
   concept: "Modern Dairy Farming | Fresh Milk Production | Sustainable Agriculture | Animal Welfare",
@@ -13,10 +14,20 @@ export const BRAND = {
   visionType: "Modern Dairy",
   visionSubtitle: "Production Vision",
   phone: "+91 80880 50628",
+  phonePlain: "+918088050628",
   email: "bharathkm@gmail.com",
-  address: "Survey No. 42, Green Valley Agricultural Belt, Maharashtra, India",
+  address: "Survey number 159, Megalahundi, Chamarajanagara Taluk, Chamarajanagara District, PIN – 571312",
+  village: "Megalahundi",
+  taluk: "Chamarajanagara Taluk",
+  district: "Chamarajanagara District",
+  pin: "571312",
+  state: "Karnataka",
   whatsapp: "+918088050628",
-  mapsUrl: "https://maps.google.com/?q=Dairy+Farming+Pastures",
+  mapsUrl: "https://maps.google.com/?q=Megalahundi,+Chamarajanagara,+Karnataka+571312",
+  officeHours: {
+    weekdays: "Monday to Friday : 7:00 am to 4:00 pm",
+    weekends: "Saturday & Sunday : 7:00 am to 12:00 pm"
+  }
 };
 
 export const NAV_ITEMS = [
@@ -64,6 +75,23 @@ export const OFFERINGS: ProductItem[] = [
     status: 'Proposed Offering'
   },
   {
+    id: 'buttermilk',
+    name: 'Organic Fresh Buttermilk',
+    tagline: 'No added preservatives, chemical-free delicious beverage',
+    category: 'Cultured Beverage',
+    packageSize: '200 ml pouch',
+    description: 'No added preservatives, chemical-free delicious beverage, from 100% organic curd hydration and natural.',
+    whyOrganic: "In today's fast life, our buttermilk prepared from the livestock, which consumes chemical free food and water that makes it 100% Organic and with no emulsifiers, added flavours and preservatives makes it safe to consume.",
+    advantages: [
+      "A great source of calcium and protein and easy to digest",
+      "Helps in digestion and prevents acidity build up since it contains probiotics for strong gut health",
+      "Hydrating and nourishing throughout the year"
+    ],
+    image: '/images/buttermilk.jpg',
+    highlights: ['200 ml pouch with cow brand', '100% Organic & chemical-free', 'Probiotic gut wellness', 'Zero emulsifiers or preservatives'],
+    status: 'Proposed Offering'
+  },
+  {
     id: 'curd',
     name: 'Curd (Dahi)',
     tagline: 'A planned dairy product offering',
@@ -108,14 +136,14 @@ export const OFFERINGS: ProductItem[] = [
 export const WHY_CHOOSE_ITEMS = [
   {
     num: '01',
-    metric: '5.5 Acres',
+    metric: 'Rich Soil',
     title: 'Fertile Agricultural Land',
     description: 'Rich fertile terrain optimized for multi-cut green fodder cultivation, hygienic cattle housing, and closed-loop farm ecology.',
     icon: 'Tractor'
   },
   {
     num: '02',
-    metric: '20-Cattle',
+    metric: 'High Welfare',
     title: 'Planned Dairy Unit',
     description: 'A focused, manageable initial herd capacity engineered for uncompromising animal care, individual monitoring, and quality control.',
     icon: 'ShieldCheck'
@@ -260,10 +288,17 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'g4',
-    title: '5.5 Acres Fertile Agricultural Land',
+    title: 'Fertile Agricultural Pastures',
     category: 'Pasture',
     image: '/images/farm-landscape.jpg',
     caption: 'Rich agricultural land earmarked for fodder cropping, cattle infrastructure, and sustainable dairy farming.'
+  },
+  {
+    id: 'g-buttermilk',
+    title: 'Organic Fresh Buttermilk (200 ml)',
+    category: 'Dairy Care',
+    image: '/images/buttermilk.jpg',
+    caption: 'Pure organic buttermilk pouch with zero preservatives, naturally cultured for digestive probiotics.'
   },
   {
     id: 'g5',
@@ -375,7 +410,7 @@ export const CORE_VALUES = [
   {
     title: "Sustainability",
     subtitle: "Respecting The Land",
-    description: "Closed-loop agricultural practices recycling farm biomass into organic manure to sustain soil vitality on 5.5 acres.",
+    description: "Closed-loop agricultural practices recycling farm biomass into organic manure to sustain soil vitality and ecological balance.",
     icon: "Leaf"
   },
   {
@@ -391,3 +426,27 @@ export const CORE_VALUES = [
     icon: "Users"
   }
 ];
+
+export const BREEDING_GENETICS_INFO: BreedingGeneticsInfo = {
+  title: "Sexed Semen of Top Breeds",
+  subtitle: "Advanced Herd Genetics & Humane Livestock Management",
+  leadParagraph: "Using female-sorted semen for HF from genetically superior cows that allows cattle farmers to produce female calves to optimize milk production and herd management, letting farmers reliably grow and replace their milking herd from top performing cows.",
+  points: [
+    {
+      title: "Targeted replacement Heifers",
+      description: "Female sorted semen ensures a 90% probability of getting a heifer calf, letting farmers reliably grow and replace their milking herd from top performing cows."
+    },
+    {
+      title: "Reduction of unwanted male calves",
+      description: "Standard dairy breeding yields roughly 50% bull calves, which often have low market value in specialized dairy systems. Sexed semen cuts down on these surplus male dairy calves."
+    },
+    {
+      title: "Lower risk of calving difficulties",
+      description: "Heifer calves are generally smaller at birth than bull calves, which helps reduce labor complications and injuries during delivery."
+    },
+    {
+      title: "Better biosecurity",
+      description: "By raising replacement heifers in-house instead of purchasing live cattle from external farms, a dairy operation lowers the risk of introducing contagious diseases."
+    }
+  ]
+};

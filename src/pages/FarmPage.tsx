@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageId } from '../types';
-import { BRAND, CATTLE_BREEDS, INFRASTRUCTURE_FACILITIES } from '../data/content';
+import { BRAND, CATTLE_BREEDS, INFRASTRUCTURE_FACILITIES, BREEDING_GENETICS_INFO } from '../data/content';
 import { CurvedDivider } from '../components/CurvedDivider';
 import { LeafDecoration } from '../components/LeafDecoration';
 import { 
@@ -15,7 +15,9 @@ import {
   CheckCircle2, 
   Tractor,
   Layers,
-  Sparkles
+  Sparkles,
+  Dna,
+  Award
 } from 'lucide-react';
 
 interface FarmPageProps {
@@ -59,7 +61,7 @@ export const FarmPage: React.FC<FarmPageProps> = ({ onNavigate, onOpenEnquiry })
             </h1>
 
             <p className="text-base sm:text-lg text-[#556B60] leading-relaxed">
-              Planned across 5.5 acres of fertile agricultural land, combining humane cattle comfort, scientific nutrition, and automated milking hygiene with an initial planned herd of 20 HF and Jersey livestock.
+              Combining humane cattle comfort, scientific nutrition, automated milking hygiene, and advanced breeding genetics to build an exemplary modern dairy ecosystem.
             </p>
           </div>
         </div>
@@ -81,7 +83,7 @@ export const FarmPage: React.FC<FarmPageProps> = ({ onNavigate, onOpenEnquiry })
                 </span>
 
                 <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-[#164D32] tracking-tight">
-                  5.5 Acres Of Fertile Agricultural Land
+                  Fertile Agricultural Land & Fodder Pastures
                 </h2>
 
                 <p className="text-base text-[#26332C]/85 leading-relaxed">
@@ -154,10 +156,10 @@ export const FarmPage: React.FC<FarmPageProps> = ({ onNavigate, onOpenEnquiry })
               <ShieldCheck className="w-6 h-6 text-[#FF7185] shrink-0" />
               <div>
                 <span className="text-xs text-[#FF7185] font-bold uppercase tracking-wider block">
-                  Planned Livestock Capacity
+                  Livestock Selection & Herd Health
                 </span>
                 <span className="text-base font-extrabold tracking-wide">
-                  20 Planned HF & Jersey Livestock
+                  Purebred HF & Jersey Herd Management
                 </span>
               </div>
             </div>
@@ -301,6 +303,63 @@ export const FarmPage: React.FC<FarmPageProps> = ({ onNavigate, onOpenEnquiry })
                   </div>
                 </div>
 
+              </div>
+            </div>
+
+            {/* Feature: Sexed Semen of Top Breeds */}
+            <div className="mt-12 bg-gradient-to-br from-[#0E3522] via-[#164D32] to-[#1E6040] rounded-3xl sm:rounded-[2.5rem] p-8 sm:p-12 text-white shadow-2xl border border-white/10 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-radial from-[#34A853]/20 via-transparent to-transparent pointer-events-none" />
+              
+              <div className="relative z-10 space-y-6">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="text-xs font-extrabold uppercase tracking-widest text-[#FF7185] bg-white/10 px-3.5 py-1 rounded-full border border-white/10 flex items-center gap-1.5">
+                    <Dna className="w-3.5 h-3.5 text-[#FF7185]" /> ADVANCED BREEDING GENETICS
+                  </span>
+                  <span className="text-xs text-white/70 font-medium">
+                    Sustainable Herd Replacement Strategy
+                  </span>
+                </div>
+
+                <div className="max-w-4xl space-y-3">
+                  <h3 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight">
+                    {BREEDING_GENETICS_INFO.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-white/85 leading-relaxed">
+                    {BREEDING_GENETICS_INFO.leadParagraph}
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-4">
+                  {BREEDING_GENETICS_INFO.points.map((point, idx) => (
+                    <div 
+                      key={idx}
+                      className="bg-white/5 hover:bg-white/10 transition-colors rounded-2xl p-6 border border-white/10 backdrop-blur-xs flex items-start gap-4"
+                    >
+                      <div className="w-10 h-10 rounded-xl bg-[#27864B]/30 border border-[#27864B] text-[#34A853] flex items-center justify-center shrink-0">
+                        <Award className="w-5 h-5 text-white" />
+                      </div>
+                      <div className="space-y-1.5">
+                        <h4 className="text-base font-bold text-white flex items-center gap-2">
+                          <span>{point.title}</span>
+                        </h4>
+                        <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
+                          {point.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-2 flex flex-wrap items-center justify-between gap-4 text-xs text-white/60 border-t border-white/10">
+                  <span>Scientific cattle breeding protocol deployed under veterinary guidance.</span>
+                  <button
+                    onClick={onOpenEnquiry}
+                    className="text-xs font-bold text-[#FF7185] hover:text-white transition-colors cursor-pointer flex items-center gap-1"
+                  >
+                    <span>Discuss Dairy Breeding Collaboration</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
               </div>
             </div>
 

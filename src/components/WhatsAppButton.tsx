@@ -5,7 +5,7 @@ import { MessageSquare } from 'lucide-react';
 export const WhatsAppButton: React.FC = () => {
   const handleWhatsApp = () => {
     const text = encodeURIComponent(
-      `Hello Vasundhara Diary and Farms! I would like to inquire regarding your planned 5.5-acre modern dairy farming project and livestock.`
+      `Hello Vasundhara Diary and Farms! I would like to inquire regarding your modern dairy farming project, products, and livestock.`
     );
     window.open(`https://wa.me/${BRAND.whatsapp.replace('+', '')}?text=${text}`, '_blank');
   };

@@ -46,11 +46,12 @@ describe('VASUNDHARA DIARY AND FARMS — Component & Integration Tests', () => {
     expect(phoneMatches.length).toBeGreaterThan(0);
   });
 
-  it('renders all 5 product cards in offerings section', () => {
+  it('renders all product cards in offerings section including Organic Fresh Buttermilk', () => {
     render(<App />);
 
     expect(screen.getByText(/Complete Dairy Solutions Under One Roof/i)).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /^Fresh Cow Milk$/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /^Organic Fresh Buttermilk$/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /^Curd \(Dahi\)$/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /^Paneer \(Cottage Cheese\)$/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: /^Traditional Ghee$/i })).toBeInTheDocument();

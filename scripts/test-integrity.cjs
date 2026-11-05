@@ -31,6 +31,7 @@ const requiredImages = [
   'curd.jpg',
   'paneer.jpg',
   'ghee.jpg',
+  'buttermilk.jpg',
 ];
 
 console.log('--- TEST SUITE 1: Image Asset Availability & Integrity ---');
@@ -64,6 +65,11 @@ const contentSrc = fs.readFileSync(contentPath, 'utf-8');
 assert(contentSrc.includes('bharathkm@gmail.com'), 'Email configured as bharathkm@gmail.com');
 assert(contentSrc.includes('+91 80880 50628'), 'Phone configured as +91 80880 50628');
 assert(contentSrc.includes('+918088050628'), 'WhatsApp configured as +918088050628');
+assert(contentSrc.includes('Megalahundi'), 'Registered office Megalahundi configured');
+assert(contentSrc.includes('Chamarajanagara'), 'Registered office Chamarajanagara configured');
+assert(contentSrc.includes('7:00 am to 4:00 pm'), 'Office hours configured');
+assert(contentSrc.includes('Organic Fresh Buttermilk'), 'Organic Fresh Buttermilk configured');
+assert(contentSrc.includes('Sexed Semen of Top Breeds'), 'Sexed Semen of Top Breeds breeding info configured');
 assert(contentSrc.includes('5.5 Acres'), 'Land size configured as 5.5 Acres');
 assert(contentSrc.includes('20 Planned'), 'Planned livestock capacity configured as 20 Planned');
 assert(contentSrc.includes('Holstein Friesian (HF)'), 'HF Cattle details present');

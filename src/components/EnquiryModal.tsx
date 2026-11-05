@@ -142,7 +142,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
             {isSuccess ? 'Enquiry Received' : "Let's Connect & Grow Together"}
           </h3>
           <p className="text-white/80 text-xs sm:text-sm mt-1">
-            Planned 5.5 Acres Modern Dairy Venture • 20 HF & Jersey Livestock
+            Modern Dairy Farming Venture • Pure & Sustainable Produce
           </p>
         </div>
 
@@ -206,7 +206,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               
               {/* Notice Banner */}
               <div className="bg-[#FFF9F1] border-l-4 border-[#27864B] p-3 rounded-r-xl text-xs text-[#26332C]/80 leading-relaxed">
-                <strong>Project Notice:</strong> Vasundhara Diary and Farms is an upcoming venture with planned 5.5 acres infrastructure and 20 cattle capacity. Product offerings are currently planned.
+                <strong>Project Notice:</strong> Vasundhara Diary and Farms is an upcoming modern dairy venture. Product offerings and distribution collaborations are open for pre-commissioning discussions.
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

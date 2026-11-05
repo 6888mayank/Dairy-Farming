@@ -31,6 +31,16 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate, onOpenEn
       features: ['Immediate rapid cooling below 4°C', 'Touchless automated milking', 'Balanced natural fat & SNF solids']
     },
     {
+      id: 'organic-fresh-buttermilk',
+      name: 'Organic Fresh Buttermilk',
+      tagline: 'No added preservatives, chemical-free delicious beverage',
+      category: 'Cultured Beverage (200 ml)',
+      description: 'No added preservatives, chemical-free delicious beverage, from 100% organic curd hydration and natural.',
+      image: '/images/buttermilk.jpg',
+      status: 'Proposed Offering',
+      features: ['200 ml handy pouch packaging', '100% Organic curd hydration', 'No preservatives or emulsifiers']
+    },
+    {
       id: 'pasteurized-milk',
       name: 'Pasteurized Whole Milk',
       tagline: 'Gently pasteurized for safety and maximum shelf stability',
@@ -194,6 +204,80 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate, onOpenEn
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Spotlight Feature: Organic Fresh Buttermilk Details */}
+          <div className="mt-16 bg-white rounded-3xl sm:rounded-[2.5rem] p-8 sm:p-12 border-2 border-[#27864B]/20 shadow-xl overflow-hidden relative">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              
+              {/* Product Pouch Image */}
+              <div className="lg:col-span-5 relative">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#FFF9F1] bg-[#FFF9F1] aspect-4/3 sm:aspect-square">
+                  <img
+                    src="/images/buttermilk.jpg"
+                    alt="Vasundhara Organic Fresh Buttermilk 200 ml pouch"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 left-4 bg-[#27864B] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md">
+                    200 ml Pouch Pack
+                  </div>
+                  <div className="absolute bottom-4 right-4 bg-[#164D32]/90 backdrop-blur-xs text-white text-[11px] font-semibold px-3 py-1 rounded-full">
+                    100% Organic Curd Hydration
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Story & Italicized Advantages */}
+              <div className="lg:col-span-7 space-y-6 text-left">
+                <div className="inline-flex items-center gap-2 bg-[#EAF5EE] text-[#27864B] px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest">
+                  PROPOSED INNOVATION • 200 ML POUCH
+                </div>
+
+                <div className="space-y-2">
+                  <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-[#164D32] tracking-tight">
+                    Why Organic Buttermilk?
+                  </h3>
+                  <p className="text-base text-[#26332C]/85 leading-relaxed">
+                    In today's fast life, our buttermilk prepared from the livestock, which consumes chemical free food and water that makes it 100% Organic and with no emulsifiers, added flavours and preservatives makes it safe to consume.
+                  </p>
+                </div>
+
+                {/* Advantages of buttermilk: in italics */}
+                <div className="bg-[#FFF9F1] rounded-2xl p-6 border border-[#27864B]/20 space-y-3">
+                  <h4 className="text-xs font-extrabold uppercase tracking-wider text-[#164D32]">
+                    Advantages of Buttermilk:
+                  </h4>
+                  <ul className="space-y-2.5 text-sm text-[#26332C]">
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#27864B] shrink-0 mt-0.5" />
+                      <span className="italic">A great source of calcium and protein and easy to digest</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#27864B] shrink-0 mt-0.5" />
+                      <span className="italic">Helps in digestion and prevents acidity build up since it contains probiotics for strong gut health</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#27864B] shrink-0 mt-0.5" />
+                      <span className="italic">Hydrating and nourishing throughout the year</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="pt-2 flex flex-wrap items-center gap-4">
+                  <button
+                    onClick={() => onOpenEnquiry('Dairy Product Enquiry', 'Organic Fresh Buttermilk (200 ml)')}
+                    className="bg-[#F04458] hover:bg-[#DC3348] text-white px-7 py-3 rounded-full font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer"
+                  >
+                    Enquire for Distribution →
+                  </button>
+                  <span className="text-xs text-[#556B60]">
+                    Zero chemical preservatives • 200 ml pouch format
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
           </div>
 
         </div>

@@ -70,10 +70,10 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
             <div>
               <h4 className="text-lg font-bold text-white tracking-wide">
-                Planned Dairy Farming Venture
+                Modern Dairy Farming Venture
               </h4>
               <p className="text-white/70 text-sm mt-0.5">
-                5.5 Acres Fertile Agricultural Land • 20 Planned HF & Jersey Cattle
+                Modern Dairy Ecosystem • Sustainable Agriculture • Pure Produce
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({
           <div className="lg:col-span-4 space-y-4">
             <Logo variant="light" onClick={() => onNavigate('home')} />
             <p className="text-white/80 text-sm leading-relaxed max-w-sm mt-3">
-              Vasundhara Diary and Farms is an upcoming modern dairy farming venture focused on combining 5.5 acres of fertile agricultural land, modern dairy infrastructure, responsible animal welfare, and sustainable practices.
+              Vasundhara Diary and Farms is an upcoming modern dairy farming venture focused on combining fertile agricultural pastures, modern dairy infrastructure, responsible animal welfare, and sustainable practices.
             </p>
             <div className="pt-2">
               <p className="text-xs uppercase tracking-widest font-bold text-[#FF7185]">
@@ -145,7 +145,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F04458]" />
-                <span>Pasteurized Whole Milk</span>
+                <span>Organic Fresh Buttermilk (200 ml)</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F04458]" />
@@ -188,6 +188,11 @@ export const Footer: React.FC<FooterProps> = ({
                 <a href={`mailto:${BRAND.email}`} className="text-xs hover:text-white transition-colors">
                   {BRAND.email}
                 </a>
+              </div>
+              <div className="pt-1 text-[11px] text-white/60 leading-relaxed border-t border-white/10">
+                <p className="font-semibold text-white/80">Office Hours:</p>
+                <p>Mon - Fri: 7:00 am - 4:00 pm</p>
+                <p>Sat - Sun: 7:00 am - 12:00 pm</p>
               </div>
             </div>
 

@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="text-xs font-bold uppercase tracking-wider text-[#27864B] flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-[#F04458]" /> Navigation Menu
               </span>
-              <span className="text-xs text-gray-500 font-medium">5.5 Acres Planned Unit</span>
+              <span className="text-xs text-gray-500 font-medium">Modern Dairy Ecosystem</span>
             </div>
 
             <nav className="mt-4 flex flex-col gap-2">

@@ -15,6 +15,21 @@ export interface ProductItem {
   image: string;
   highlights: string[];
   status: 'Proposed Offering' | 'Planned Product' | 'Future Category';
+  packageSize?: string;
+  whyOrganic?: string;
+  advantages?: string[];
+}
+
+export interface GeneticProgramPoint {
+  title: string;
+  description: string;
+}
+
+export interface BreedingGeneticsInfo {
+  title: string;
+  subtitle: string;
+  leadParagraph: string;
+  points: GeneticProgramPoint[];
 }
 
 export interface CattleBreed {

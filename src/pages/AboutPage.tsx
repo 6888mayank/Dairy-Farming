@@ -59,7 +59,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
             </h1>
 
             <p className="text-base sm:text-lg text-[#556B60] leading-relaxed">
-              Vasundhara Diary and Farms is an upcoming modern dairy farming enterprise established on 5.5 acres of fertile agricultural land, guided by science, animal welfare, and sustainable land stewardship.
+              Vasundhara Diary and Farms is an upcoming modern dairy farming enterprise established in Chamarajanagara, guided by science, animal welfare, and sustainable land stewardship.
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white">
                 <img
                   src="/images/farm-landscape.jpg"
-                  alt="Fertile 5.5 acres farmland"
+                  alt="Fertile farmland and green pastures"
                   className="w-full h-[440px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -88,7 +88,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
                     Agricultural Base
                   </span>
                   <h4 className="text-lg font-bold text-white mt-1">
-                    5.5 Acres Fertile Agricultural Land
+                    Fertile Agricultural Pastures
                   </h4>
                   <p className="text-xs text-white/80 mt-1">
                     Earmarked for dedicated fodder cropping and climate-controlled cattle housing.
@@ -109,11 +109,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
 
               <div className="space-y-4 text-base text-[#26332C]/85 leading-relaxed">
                 <p className="font-medium text-[#164D32] bg-white p-5 rounded-2xl border border-[#164D32]/10 shadow-xs">
-                  "Vasundhara Diary and Farms is an upcoming modern dairy farming venture planned across 5.5 acres of fertile agricultural land. The project aims to establish a modernized dairy production unit with an initial planned livestock capacity of 20 HF and Jersey cattle."
+                  "Vasundhara Diary and Farms is an upcoming modern dairy farming venture located in Megalahundi, Chamarajanagara. The project aims to establish an exemplary dairy production unit rooted in animal welfare, modern infrastructure, and pure milk production."
                 </p>
 
                 <p>
-                  Our focus is on developing a professional dairy operation through responsible animal care, modern infrastructure, hygienic practices, and sustainable agricultural management. Rather than pursuing unmonitored mass scale, we have structured our venture around a deliberate 20-cattle initial phase, ensuring every animal receives precise nutritional care, veterinary oversight, and humane housing.
+                  Our focus is on developing a professional dairy operation through responsible animal care, modern infrastructure, hygienic practices, and sustainable agricultural management. Rather than pursuing unmonitored mass scale, we have structured our venture around precision herd management, ensuring every animal receives individualized nutritional care, veterinary oversight, and humane housing.
                 </p>
 
                 <p className="text-sm text-[#556B60]">
@@ -125,11 +125,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
                 <div className="bg-white p-3.5 rounded-2xl border border-gray-100 text-left">
                   <span className="text-xs text-[#556B60] block">Land Allocation</span>
-                  <span className="text-sm font-bold text-[#164D32]">5.5 Fertile Acres</span>
+                  <span className="text-sm font-bold text-[#164D32]">Fertile Pastures</span>
                 </div>
                 <div className="bg-white p-3.5 rounded-2xl border border-gray-100 text-left">
-                  <span className="text-xs text-[#556B60] block">Initial Herd</span>
-                  <span className="text-sm font-bold text-[#F04458]">20 HF & Jersey</span>
+                  <span className="text-xs text-[#556B60] block">Livestock Care</span>
+                  <span className="text-sm font-bold text-[#F04458]">Purebred HF & Jersey</span>
                 </div>
                 <div className="bg-white p-3.5 rounded-2xl border border-gray-100 text-left">
                   <span className="text-xs text-[#556B60] block">Ecosystem</span>
@@ -292,7 +292,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
       <section className="py-16 bg-[#FFF9F1] text-center">
         <div className="max-w-4xl mx-auto px-4 space-y-4">
           <h3 className="text-2xl sm:text-3xl font-bold text-[#164D32]">
-            Want to learn more about our 5.5-acre farm setup?
+            Want to learn more about our modern dairy setup?
           </h3>
           <p className="text-sm text-[#556B60]">
             Explore our planned cattle housing, feeding management, and livestock specifications.
