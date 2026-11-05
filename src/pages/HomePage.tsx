@@ -806,49 +806,133 @@ export const HomePage: React.FC<HomePageProps> = ({
       </section>
 
       {/* =========================================================================
-          SECTION I: FINAL CALL TO ACTION (Farm Landscape Background)
+          SECTION I: PARTNERSHIP & COLLABORATION
           ========================================================================= */}
-      <section className="relative py-24 sm:py-32 overflow-hidden text-center text-white">
-        {/* Background Image with Deep Overlay */}
-        <div className="absolute inset-0 -z-10">
-          <img
-            src="/images/farm-landscape.jpg"
-            alt="Lush green farm landscape panorama"
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-[#164D32]/85 backdrop-blur-xs" />
-        </div>
+      <section className="partnership-section py-20 sm:py-28 text-center text-white">
+        {/* Background Image with Deep Gradient Overlay */}
+        <div className="partnership-bg-overlay" />
+        <img
+          src="/images/farm-landscape.jpg"
+          alt="Lush green farm landscape panorama"
+          className="partnership-bg-img"
+        />
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs font-extrabold uppercase tracking-widest text-[#FF7185]">
-            <Sparkles className="w-3.5 h-3.5" />
-            PARTNERSHIP & COLLABORATION
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
+          
+          {/* Section Header */}
+          <div className="max-w-3xl mx-auto space-y-4 text-center">
+            <div className="partnership-badge">
+              <Sparkles className="w-3.5 h-3.5 text-[#FF7185]" />
+              <span>PARTNERSHIP & COLLABORATION</span>
+            </div>
+
+            <h2 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
+              Let's Build A Better Dairy Future Together.
+            </h2>
+
+            <p className="text-base sm:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
+              Connect with Vasundhara Diary and Farms to explore strategic dairy distribution, sustainable agricultural alliances, and high-welfare herd breeding opportunities.
+            </p>
           </div>
 
-          <h2 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
-            Let's Build A Better Dairy Future Together.
-          </h2>
+          {/* 3 Interactive Partnership Pillar Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            
+            {/* Card 1: Retail & Distribution */}
+            <div className="partnership-card group">
+              <div>
+                <div className="partnership-card-icon">
+                  <Sparkles className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-[11px] font-bold text-[#FF7185] uppercase tracking-wider block mb-1">
+                  Commercial Avenue
+                </span>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FF7185] transition-colors">
+                  Dairy Retail & Distribution
+                </h3>
+                <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
+                  Pre-booking pure farm-fresh milk, 200 ml organic buttermilk pouches, and traditional granular ghee for premium retail, institutional, and residential channels.
+                </p>
+              </div>
+              <button
+                onClick={() => onOpenEnquiry('Distribution Enquiry')}
+                className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-[#34A853] group-hover:text-white transition-colors cursor-pointer"
+              >
+                <span>Distribution Inquiry</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
 
-          <p className="text-base sm:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
-            Connect with Vasundhara Diary and Farms to explore our dairy farming journey and future opportunities.
-          </p>
+            {/* Card 2: Agricultural Alliances */}
+            <div className="partnership-card group">
+              <div>
+                <div className="partnership-card-icon">
+                  <Sprout className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-[11px] font-bold text-[#34A853] uppercase tracking-wider block mb-1">
+                  Agri Synergy
+                </span>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#34A853] transition-colors">
+                  Fodder & Sustainable Farming
+                </h3>
+                <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
+                  Engaging regional farmers in high-protein green fodder cropping (Napier, Maize, Lucerne) and closed-loop organic bio-manure soil revitalization.
+                </p>
+              </div>
+              <button
+                onClick={() => onOpenEnquiry('Agricultural Collaboration')}
+                className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-[#34A853] group-hover:text-white transition-colors cursor-pointer"
+              >
+                <span>Agricultural Alliance</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
 
-          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Card 3: Herd Genetics & Welfare */}
+            <div className="partnership-card group">
+              <div>
+                <div className="partnership-card-icon">
+                  <HeartHandshake className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-[11px] font-bold text-[#FF7185] uppercase tracking-wider block mb-1">
+                  Livestock Science
+                </span>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FF7185] transition-colors">
+                  Breeding & Veterinary Exchange
+                </h3>
+                <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
+                  Collaborative research with veterinarians and livestock specialists on sexed semen genetics, disease biosecurity, and benchmark cattle welfare protocols.
+                </p>
+              </div>
+              <button
+                onClick={() => onOpenEnquiry('Business Partnership')}
+                className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-[#34A853] group-hover:text-white transition-colors cursor-pointer"
+              >
+                <span>Breeding Collaboration</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+          </div>
+
+          {/* Action Buttons */}
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => onNavigate('contact')}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#F04458] hover:bg-[#DC3348] text-white px-9 py-4 rounded-full font-bold text-base shadow-xl shadow-[#F04458]/35 hover:-translate-y-0.5 transition-all cursor-pointer group"
+              className="btn-partnership-primary group"
             >
-              <span>Contact Us</span>
+              <span>Contact Our Team</span>
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </button>
 
             <button
               onClick={() => onNavigate('products')}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-bold text-base backdrop-blur-sm transition-all cursor-pointer"
+              className="btn-partnership-secondary"
             >
               <span>View Proposed Offerings</span>
             </button>
           </div>
+
         </div>
       </section>
 

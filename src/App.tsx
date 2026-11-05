@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import { PageId, GalleryItem } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
